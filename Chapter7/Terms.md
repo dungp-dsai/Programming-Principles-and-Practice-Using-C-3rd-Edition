@@ -1,0 +1,36 @@
+- activation record: records local variables, parameter list and implementation stuff
+- function: named a set of statements doing specific computation.
+- pass-by-reference: function arguments refer to address of actual variables rather than copy the values into new values to pass into the function
+- argument: what is passed into a function 
+- function definition: this is where we specify detailed implementation of a function, where we write function body
+- pass-by-value: arguments of functions copy new values when we pass into a function.
+- argument passing: 
+- global scope: outter most scope in a program
+- recursion: function calles itself
+- call stack: contains set of activation record, it records which functions are called in what order. And destroyes activation record with the order last in first out after completing a function execution. 
+- header file: 
+- return: keyword used to return values from a function
+- class scope: what within a class
+- initializer: initial values when we define a name
+- return value: output of a function 
+- const: a keyword used to define pass-by-const-reference
+- local scope: what within {} or a function parameter
+- scope: region of text 
+- constexpr: keyword used to specify things to run at the compile-time.
+- namespace: a concept to group things like function, class, data types into an indentifiable part without defining a type. 
+- statement scope: such as in for statement 
+- declaration: introduce a name into a scope
+- namespace scope: what inside a namespace
+- technicalities: details specific to a programming languages. 
+- definition: allocate memory to a name 
+- nested block: block inside block
+- undeclared identifier: 
+- extern: keyword use to declare a name which is defined elsewhere
+- parameter: is often called formal argument. what is passed into a function.
+- using declaration: an approach to declare a name within a namespace to shorten the fully qualified name 
+- forward declaration: 
+- pass-by-const-reference: argument refers to an address with read-only permission
+- using directive: force a name refer to a namespace.
+- auto: keyword to deduce return type in a function definition
+- −>: trailing return notation 
+- suffix return type: instead of return type at the beginning in function declaration or definition, we can put it after parameter list. 
