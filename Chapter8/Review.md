@@ -34,4 +34,14 @@ A default member initialzer is a data member of a class which provides values fo
 - save time for implementers to provide useful things only.
 
 <b>[11] What does adding const to a member function do?</b>
+to specify that function cannot change the data of an object.
+
+<b>[12] Why are “helper functions” best placed outside the class definition?</b>
+Because by doing that we can keep interface minial but also complete as the ideal principle to form a good public interface for a class. 
+
+<b>[13] How does an enum class differ from a “plain” enum?</b>
+enum class 
+1. the way to define. plain enum does not need the class keyword in the definition 
+2. enumerators inside an enum class is available inside the enumeration scope, must access via the enumeration. Wheras, plain enum does not have this scope.
+3. enum class does not allow to convert its implicit values while its okay to do so in plain enum. for example its error when we use int x = Enum:jan;
 
