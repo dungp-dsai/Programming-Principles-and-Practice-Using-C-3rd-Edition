@@ -1,0 +1,22 @@
+- built-in types: types come with the programming language such as int, double, char, etc
+- enumerator: element inside an enumeration type 
+- representation: value that represent the data of an object
+- class: user-defined types
+- helper function: a function provide a useful operation on an object of a class
+- struct: user-defined type in case that we just handle with plain data. 
+- const: 
+- implementation: details logics of an operation
+- structure:
+- constructor: its used to initialize for an object
+- in-class initializer: that is default data member
+- user-defined types: which is not built-in types
+- destructor: 
+- inlining: compiler replaces function body directly when execute the function without jumping to that function and return, etc to help boost performance.
+- valid state: values of an object that we can say they are valid depending on our definition.
+- enum: keyword to define an enumeration
+- interface: what users can access to an object
+- enumeration: another way besides class to build user-defined types
+- invariant: rules defining what is valid state for an object
+- enum class: define scoped enumeration
+- operator overloading: providing operators for user-defined types operands
+- default member initializer: data member of a class which compiler will pick up to use inside constructors if that constructor does not explicitly initialize that member.
