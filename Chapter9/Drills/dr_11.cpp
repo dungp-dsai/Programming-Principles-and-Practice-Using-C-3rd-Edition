@@ -8,14 +8,29 @@ struct Point {
     int y;
 };
 
+void end_of_loop(istream& is, char term, const string& message) {
+    if(is.fail()) {
+        is.clear();
+        char ch = 0;
+        if(is>>ch && ch==term) {
+            cerr << message;
+            return;
+        }
+        char extra;
+        if(is>>extra) {
+            cerr << "Formatting error \n";
+        }
+    }
+}
+
 istream& operator>>(istream& is, Point& p) {
     char ch;
-    int x=-1111, y=-111;
-    is >> x >> ch >> y;
-    cout << "Debug: " << x << ' ' << ch << ' ' << y << '\n';
-    // is >> p.x >> ch >> p.y;
-    if(is.fail() || ch != ',')
+    is >> p.x >> ch >> p.y;
+    if(!is || (ch != ',')) {
+        is.clear(ios::failbit);
         cerr << "Input formar error \n";
+        return is;
+    }
     return is;
 }
 
@@ -38,16 +53,16 @@ int main() {
         cerr << "Something wrong when open the input file: " << iname << '\n';
     
     vector <Point> points;
-    // for(Point p; is >>p ;)
-    //     points.push_back(p);
-    Point p;
-    while(is>>p) 
+    for(Point p; is >>p ;)
         points.push_back(p);
+
+    end_of_loop(is, '|', "Bad termination of file \n");
+
     if (!os)
         cerr << "Something wrong when open the output file: " << oname << '\n';
 
     for(Point p: points)
-        os << p;
+        os << p << '\n';
 
     return 0;
 }
