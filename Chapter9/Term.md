@@ -1,0 +1,5 @@
+- binary: number in base 2
+- hexadecimal: number in base 16
+- octal: number in base 8
+- getline(): fetch full line of the input 
+- 
